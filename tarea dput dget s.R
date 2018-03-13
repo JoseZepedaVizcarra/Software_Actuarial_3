@@ -1,0 +1,5 @@
+x <- data.frame(mtcars)
+dput(x)
+dput(x,file = "~/GitHub/Software_Actuarial_3/Carros.R")
+carrosJoseZepeda <- dget(file = "~/GitHub/Software_Actuarial_3/Carros.R")
+dput(carrosJoseZepeda)
