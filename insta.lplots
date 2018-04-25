@@ -1,0 +1,5 @@
+install.packages("markdown")
+install.packages("ggplot2")
+install.packages("devtools")
+a <- installed.packages()
+View (a)
