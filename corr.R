@@ -11,12 +11,15 @@ corr <- function(directorio ,horizonte = 0){
     if(nchar(i)==1){                
       valor <- read.csv(paste("00",i,".csv",sep=""))
     }
+    
     if(nchar(i)==2){                 
       valor <- read.csv(paste("0",i,".csv",sep=""))
+    }
     
     if(nchar(i)==3){                
       valor <- read.csv(paste(i,".csv",sep=""))
     }
+    
     x <- data.matrix(valor)               
     c <- x[complete.cases(x),]      
     n <- nrow(c)                    
